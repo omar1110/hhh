@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+	<script src="jquery-2.1.1.min.js"></script>
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="jquery.mobile-1.4.4.min.css" />	
+	
+-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+<script src="jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/todostyle.css">
+<script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
+<script type="text/javascript" src="js/jquery-ui-touch-punch.js"></script>
+
+<script>
+
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });</script>
+<!--
+<script>
+$(document).on("pagecreate","#pageone",function(){
+  $("#11").on("swiperight",function(){
+    alert("You swiped right!");
+  });                       
+});
+</script>-->
+
+					
+
+</head>
+<body>
+<!--this is the Header navBar-->
+<div class="navbar navbar-default navbar-fixed-top">
+<!--
+navbar-static-top :the navebar will stay at top while scrolling
+navbar-fixed-top : the navbar will scroll down while scrolling
+-->
+	
+
+	<div class="container-fluid side-collapse-container">
+		<div class="navbar-brand">
+			<span class="glyphicon glyphicon-cloud set-opacity"></span>
+			Do It.		
+		</div>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navheadercollapse">
+			<span class="glyphicon glyphicon-cog"></span>
+		</button>
+		<div class="collapse navbar-collapse navheadercollapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">test</a>
+				</li>
+				<li>
+					<a href="#">test</a>
+				</li>
+				<li>
+					<a href="#">test</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--this is the main -->
+
+		<div class="row">
+			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ] test">
+				<ul class="event-list" id="sortable">
+					<li>
+						<time datetime="2014-07-20">
+							<span class="day">4</span>
+							<span class="month">Jul</span>
+							<span class="year">2014</span>
+							<span class="time">ALL DAY</span>
+						</time>
+						<img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
+						<div class="info">
+							<h2 class="title">Independence Day</h2>
+							<p class="desc">United States Holiday</p>
+						</div>
+
+					</li>
+
+					<li>
+						<time datetime="2014-07-20 0000">
+							<span class="day">8</span>
+							<span class="month">Jul</span>
+							<span class="year">2014</span>
+							<span class="time">12:00 AM</span>
+						</time>
+						<div class="info">
+							<h2 class="title">One Piece Unlimited World Red</h2>
+							<p class="desc">PS Vita</p>
+							<ul>
+								<li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Website</a></li>
+								<li style="width:50%;"><span class="fa fa-money"></span> $39.99</li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<time datetime="2014-07-20 2000">
+							<span class="day">20</span>
+							<span class="month">Jan</span>
+							<span class="year">2014</span>
+							<span class="time">8:00 PM</span>
+						</time>
+						<img alt="My 24th Birthday!" src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg" />
+						<div class="info">
+							<h2 class="title">Mouse0270's 24th Birthday!</h2>
+							<p class="desc">Bar Hopping in Erie, Pa.</p>
+							<ul>
+								<li style="width:33%;">1 <span class="glyphicon glyphicon-ok"></span></li>
+								<li style="width:34%;">3 <span class="fa fa-question"></span></li>
+								<li style="width:33%;">103 <span class="fa fa-envelope"></span></li>
+							</ul>
+						</div>
+
+					</li>
+
+					<li>
+						<time datetime="2014-07-31 1600">
+							<span class="day">31</span>
+							<span class="month">Jan</span>
+							<span class="year">2014</span>
+							<span class="time">4:00 PM</span>
+						</time>
+						<img alt="Disney Junior Live On Tour!" src="http://www.thechaifetzarena.com/images/main/DL13_PiratePrincess_thumb.jpg" />
+						<div class="info">
+							<h2 class="title">Disney Junior Live On Tour!</h2>
+							<p class="desc"> Pirate and Princess Adventure</p>
+							<ul>
+								<li style="width:33%;">$49.99 <span class="fa fa-male"></span></li>
+								<li style="width:34%;">$29.99 <span class="fa fa-child"></span></li>
+							</ul>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+<!--this is thr footer Nav Bar-->
+<!--
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-4"></div>
+			<div class="col-xs-4">	
+				<a class="navbar-brand btn set-center" href="#">
+	  				<span class="glyphicon glyphicon-plus-sign"></span>
+	  			</a>
+	  			
+				<button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-ok"></i></button>
+				<button type="button" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-list"></i></button>
+				<button type="button" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-link"></i></button>
+				<button type="button" class="btn btn-info btn-circle btn-lg"><i class="glyphicon glyphicon-ok"></i></button>
+				<button type="button" class="btn btn-warning btn-circle btn-lg"><i class="glyphicon glyphicon-remove"></i></button>
+				<button type="button" class="btn btn-danger btn-circle btn-lg"><i class="glyphicon glyphicon-plus-sign"></i></button>
+			</div>
+			<div class="col-xs-4">
+				
+			</div>
+		</div>
+			</ul>
+	</div>
+	
+</div>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span> 
+            </button> 
+
+
+          <button type="button" class="navbar-toggle active" data-toggle="collapse" data-target="#myNavbar">
+            <span class="glyphicon glyphicon-plus"></span>
+            </button>                
+          
+          <a class="navbar-brand" href="#" id="p1">Note</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+	    <div class="container-fluid">
+		<div class="row">
+			<div class="[ col-xs-12 col-sm-offset-2 col-xl-8 ]">
+
+				<ul class="event-list" id="sortable" >
+
+					<li>
+						<time datetime="2014-07-20">
+							<span class="day">4</span>
+							<span class="month">Jul</span>
+							<span class="year">2014</span>
+							<span class="time">ALL DAY</span>
+						</time>
+						<div class="info">
+							<h2 class="title">Independence Day</h2>
+							<p class="desc">United States Holiday</p>
+						</div>
+
+					</li>
+
+
+
+
+
+
+					<li>
+						<time datetime="2014-07-20 0000">
+							<span class="day">8</span>
+							<span class="month">Jul</span>
+							<span class="year">2014</span>
+							<span class="time">12:00 AM</span>
+						</time>
+						<div class="info">
+							<h2 class="title">One Piece Unlimited World Red</h2>
+							<p class="desc">PS Vita</p>
+							<ul>
+								<li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Website</a></li>
+								<li style="width:50%;"><span class="fa fa-money"></span> $39.99</li>
+							</ul>
+						</div>
+
+					</li>
+
+
+
+
+
+
+					<li>
+						<time datetime="2014-07-20 2000">
+							<span class="day">20</span>
+							<span class="month">Jan</span>
+							<span class="year">2014</span>
+							<span class="time">8:00 PM</span>
+						</time>
+						<div class="info">
+							<h2 class="title">Mouse0270's 24th Birthday!</h2>
+							<p class="desc">Bar Hopping in Erie, Pa.</p>
+							<ul>
+								<li style="width:33%;">1 <span class="glyphicon glyphicon-ok"></span></li>
+								<li style="width:34%;">3 <span class="fa fa-question"></span></li>
+								<li style="width:33%;">103 <span class="fa fa-envelope"></span></li>
+							</ul>
+						</div>
+						
+					</li>
+
+
+
+
+
+					<li>
+						<time datetime="2014-07-31 1600">
+							<span class="day">31</span>
+							<span class="month">Jan</span>
+							<span class="year">2014</span>
+							<span class="time">4:00 PM</span>
+						</time>
+						<div class="info">
+							<h2 class="title">Disney Junior Live On Tour!</h2>
+							<p class="desc"> Pirate and Princess Adventure</p>
+							<ul>
+								<li style="width:33%;">$49.99 <span class="fa fa-male"></span></li>
+								<li style="width:34%;">$29.99 <span class="fa fa-child"></span></li>
+							</ul>
+						</div>
+						
+					</li>
+
+					<li>
+						<time datetime="2014-07-31 1600">
+							<span class="day">31</span>
+							<span class="month">Jan</span>
+							<span class="year">2014</span>
+							<span class="time">4:00 PM</span>
+						</time>
+						<div class="info">
+							<h2 class="title">Disney Junior Live On Tour!</h2>
+							<p class="desc"> Pirate and Princess Adventure</p>
+							<ul>
+								<li style="width:33%;">$49.99 <span class="fa fa-male"></span></li>
+								<li style="width:34%;">$29.99 <span class="fa fa-child"></span></li>
+							</ul>
+						</div>
+						
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<button onclick="appendeliment()">Insert after</button>
+-->
+</body>
+</html>
